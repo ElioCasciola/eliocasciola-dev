@@ -1,10 +1,14 @@
-import Hero from './components/Hero.jsx'
+import Home from './pages/Home.jsx'
+import Navbar from './components/Navbar.jsx'
 
 function App() {
     return (
-        <main>
-            <Hero />
-        </main>
+        <>
+            <Navbar />
+            <main>
+                <Home />
+            </main>
+        </>
     )
 }
 
