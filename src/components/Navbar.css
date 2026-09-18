@@ -1,0 +1,36 @@
+.navbar-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-end;
+}
+
+.site-header {
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-link {
+    color: var(--text-h);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar-link:hover {
+    color: var(--accent);
+}
+
+.navbar-link:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+}
+
+.site-logo-image {
+    display: block;
+    width: 64px;
+    height: auto;
+}

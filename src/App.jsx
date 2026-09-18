@@ -1,15 +1,21 @@
-import Home from './pages/Home.jsx'
-import Navbar from './components/Navbar.jsx'
+import { Route, Routes } from 'react-router';
+import Home from './pages/Home.jsx';
+import Projects from './pages/Projects.jsx';
+import Navbar from './components/Navbar.jsx';
+
 
 function App() {
     return (
         <>
             <Navbar />
             <main>
-                <Home />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/projects" element={<Projects />} />
+                </Routes>
             </main>
         </>
-    )
+    );
 }
 
-export default App
+export default App;
