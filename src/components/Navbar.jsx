@@ -3,8 +3,16 @@ import './Navbar.css'
 import logo from '../assets/logo.svg'
 
 function Navbar() {
-    const projectLink = <a className="navbar-link" href="/projects">Projects</a>
-    const cvLink = <a className="navbar-link" href="/cv">CV</a>
+    const projectLink = (
+        <Link className="navbar-link" to="/projects">
+            Projects
+        </Link>
+    )
+    const cvLink = (
+        <Link className="navbar-link" to="/cv">
+            CV
+        </Link>
+    )
 
     return (
         <header className="site-header">
