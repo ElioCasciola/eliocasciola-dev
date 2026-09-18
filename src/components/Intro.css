@@ -9,13 +9,9 @@
 
 .intro-video {
     width: auto;
+    height: 60vh;
+    max-width: 120vw;
     object-fit: contain;
-}
-
-.intro-skip {
-    position: absolute;
-    right: 2rem;
-    bottom: 2rem;
 }
 
 .intro {
