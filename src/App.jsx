@@ -7,8 +7,6 @@ import { useState } from 'react';
 import Intro from './components/Intro.jsx';
 
 function App() {
-    const [showIntro, setShowIntro] = useState(true);
-
     return (
         <>
             {showIntro && (
