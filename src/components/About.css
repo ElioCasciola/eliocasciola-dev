@@ -1,0 +1,41 @@
+.about-section {
+    padding: 6rem 2rem;
+    text-align: left;
+}
+
+.about-content {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.section-label {
+    margin-bottom: 1rem;
+    color: var(--accent);
+    font-family: var(--mono);
+    font-size: 0.875rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.about-section h2 {
+    margin: 0 0 1.5rem;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.1;
+}
+
+.about-description {
+    max-width: 65ch;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+    .about-section {
+        padding: 4rem 1.25rem;
+    }
+
+    .about-description {
+        font-size: 1rem;
+    }
+}

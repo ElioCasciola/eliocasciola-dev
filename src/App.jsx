@@ -5,6 +5,7 @@ import Navbar from './components/Navbar.jsx';
 import Cv from './pages/Cv.jsx';
 import { useState } from 'react';
 import Intro from './components/Intro.jsx';
+import Contacts from './pages/Contacts.jsx';
 
 function App() {
     const [showIntro, setShowIntro] = useState(true);
@@ -22,6 +23,7 @@ function App() {
                     <Route path="/" element={<Home />} />
                     <Route path="/projects" element={<Projects />} />
                     <Route path="/cv" element={<Cv />} />
+                    <Route path="/contacts" element={<Contacts />} />
                 </Routes>
             </main>
         </>

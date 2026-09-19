@@ -1,0 +1,90 @@
+.contacts-page {
+    padding: 6rem 2rem;
+    text-align: left;
+}
+
+.contacts-content {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.contacts-page h1 {
+    margin: 0 0 1.5rem;
+    line-height: 1.1;
+}
+
+.contacts-description {
+    max-width: 55ch;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.contacts-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid var(--accent);
+    border-radius: 6px;
+    color: var(--accent);
+    font-weight: 600;
+    text-decoration: none;
+    transition:
+            background-color 200ms ease,
+            color 200ms ease,
+            transform 200ms ease;
+    gap: 0.6rem;
+}
+
+.contact-link:hover {
+    background-color: var(--accent-bg);
+    transform: translateY(-2px);
+}
+
+.contact-link:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+}
+
+.contact-link--primary {
+    color: var(--bg);
+    background-color: var(--accent);
+}
+
+.contact-link--primary:hover {
+    color: var(--text-h);
+    background-color: var(--accent-border);
+}
+
+@media (max-width: 600px) {
+    .contacts-page {
+        padding: 4rem 1.25rem;
+    }
+
+    .contacts-description {
+        font-size: 1rem;
+    }
+
+    .contacts-links {
+        flex-direction: column;
+    }
+
+    .contact-link {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+.contact-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    flex-shrink: 0;
+}

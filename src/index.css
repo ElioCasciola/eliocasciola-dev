@@ -3,13 +3,9 @@
   --text-h: #f4f6f8;
   --bg: #111315;
   --border: #30343b;
-  --code-bg: #f4f3ec;
-  --accent: #c084fc;
+  --accent: #777575;
   --accent-bg: rgba(192, 132, 252, 0.15);
   --accent-border: rgba(192, 132, 252, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
@@ -28,11 +24,6 @@
     font-size: 16px;
   }
 }
-
-#social .button-icon {
-  filter: invert(1) brightness(2);
-}
-
 
 body {
   margin: 0;
@@ -77,19 +68,4 @@ h2 {
 }
 p {
   margin: 0;
-}
-
-code,
-.counter {
-  font-family: var(--mono);
-  display: inline-flex;
-  border-radius: 4px;
-  color: var(--text-h);
-}
-
-code {
-  font-size: 15px;
-  line-height: 135%;
-  padding: 4px 8px;
-  background: var(--code-bg);
 }

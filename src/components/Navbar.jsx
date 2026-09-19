@@ -14,6 +14,12 @@ function Navbar() {
         </Link>
     )
 
+    const contactsLink = (
+        <Link className="navbar-link" to="/contacts">
+            Contatti
+        </Link>
+    )
+
     return (
         <header className="site-header">
             <Link className="site-logo" to="/">
@@ -27,6 +33,7 @@ function Navbar() {
                 <ul className="navbar-list">
                     <li>{projectLink}</li>
                     <li>{cvLink}</li>
+                    <li>{contactsLink}</li>
                 </ul>
             </nav>
         </header>
