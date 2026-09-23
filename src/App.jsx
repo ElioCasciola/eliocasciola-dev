@@ -6,6 +6,7 @@ import Cv from './pages/Cv.jsx';
 import { useState } from 'react';
 import Intro from './components/Intro.jsx';
 import Contacts from './pages/Contacts.jsx';
+import Blog from './pages/Blog.jsx';
 
 function App() {
     const [showIntro, setShowIntro] = useState(true);
@@ -22,6 +23,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/projects" element={<Projects />} />
+                    <Route path="/blog" element={<Blog />} />
                     <Route path="/cv" element={<Cv />} />
                     <Route path="/contacts" element={<Contacts />} />
                 </Routes>

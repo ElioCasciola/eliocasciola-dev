@@ -8,6 +8,11 @@ function Navbar() {
             Projects
         </Link>
     )
+    const blogLink = (
+        <Link className="navbar-link" to="/blog">
+            Blog
+        </Link>
+    )
     const cvLink = (
         <Link className="navbar-link" to="/cv">
             CV
@@ -32,6 +37,7 @@ function Navbar() {
             <nav className="navbar">
                 <ul className="navbar-list">
                     <li>{projectLink}</li>
+                    <li>{blogLink}</li>
                     <li>{cvLink}</li>
                     <li>{contactsLink}</li>
                 </ul>
