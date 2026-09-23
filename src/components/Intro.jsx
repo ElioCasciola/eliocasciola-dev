@@ -3,6 +3,9 @@ import './Intro.css'
 
 function Intro({ onFinish }) {
     const [isExiting, setIsExiting] = useState(false)
+    const isIOS =
+        /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+        (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)
 
     function handleVideoEnd() {
         setIsExiting(true)
@@ -30,8 +33,17 @@ function Intro({ onFinish }) {
                 onEnded={handleVideoEnd}
                 onError={onFinish}
             >
-                <source src="/intro.webm" type="video/webm" />
-                <source src="/intro.mp4" type="video/mp4" />
+                {isIOS ? (
+                    <>
+                        <source src="/intro-ios.mp4" type="video/mp4" />
+                        <source src="/intro.mp4" type="video/mp4" />
+                    </>
+                ) : (
+                    <>
+                        <source src="/intro.webm" type="video/webm" />
+                        <source src="/intro.mp4" type="video/mp4" />
+                    </>
+                )}
             </video>
         </div>
     )
