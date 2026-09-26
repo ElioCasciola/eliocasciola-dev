@@ -8,11 +8,15 @@
 }
 
 .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
     padding: 1.5rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid var(--border);
+    background: var(--bg);
 }
 
 .navbar-link {
