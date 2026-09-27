@@ -1,5 +1,5 @@
 .projects-page {
-    padding: 6rem 2rem;
+    padding: 6rem 2rem 4.5rem;
     text-align: left;
 }
 
@@ -22,9 +22,9 @@
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 420px));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 380px));
     gap: 1.5rem;
-    margin-top: 4rem;
+    margin-top: 2.5rem;
 }
 
 .project-card {
@@ -45,8 +45,8 @@
 .project-card__media {
     display: flex;
     align-items: center;
-    min-height: 210px;
-    padding: 2.5rem;
+    min-height: 150px;
+    padding: 1.75rem;
     border-bottom: 1px solid var(--border);
     background: #090a0b;
 }
@@ -58,7 +58,7 @@
 }
 
 .project-card__body {
-    padding: 1.75rem;
+    padding: 1.5rem;
 }
 
 .project-card__meta {
