@@ -29,8 +29,13 @@ function Contacts() {
                             <span className="email-label">email:</span>{' '}
                             elio.casciola <span aria-hidden="true">[at]</span>
                             <span className="sr-only">chiocciola</span>{' '}
-                            gmail <span aria-hidden="true">[dot]</span>
-                            <span className="sr-only">punto</span> com
+                            gmail
+                            <span className="email-dot-desktop">
+                                {' '}
+                                <span aria-hidden="true">[dot]</span>
+                                <span className="sr-only">punto</span>{' '}
+                            </span>
+                            com
                         </code>
 
                         <button

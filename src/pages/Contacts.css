@@ -21,6 +21,7 @@
 }
 
 .contact-options {
+    width: fit-content;
     max-width: 620px;
     margin-top: 2rem;
 }
@@ -69,8 +70,8 @@
 }
 
 .contacts-social {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1rem;
     margin-top: 1rem;
 }
@@ -114,6 +115,17 @@
     border: 0;
 }
 
+@media (min-width: 601px) {
+    .contacts-social a {
+        font-size: 1.05rem;
+    }
+
+    .contacts-social a svg {
+        width: 1.2em;
+        height: 1.2em;
+    }
+}
+
 @media (max-width: 600px) {
     .contacts-page {
         padding: 4rem 1.25rem;
@@ -124,20 +136,47 @@
     }
 
     .email-box {
-        align-items: stretch;
-        flex-direction: column;
-        padding: 1rem;
+        width: fit-content;
+        max-width: 100%;
+        gap: 0.5rem;
+        padding: 0.5rem 0.55rem 0.5rem 0.75rem;
+    }
+
+    .email-address {
+        min-width: 0;
+        font-size: 0.7rem;
+        line-height: 1.4;
+        white-space: nowrap;
     }
 
     .email-copy {
-        align-self: flex-start;
+        padding: 0.38rem 0.6rem;
+        font-size: 0.75rem;
     }
 
     .contacts-social a {
-        width: 100%;
+        min-width: 115px;
+        padding: 0.65rem 1rem;
+        font-size: 1.05rem;
+    }
+
+    .contacts-social a svg {
+        width: 1.2em;
+        height: 1.2em;
     }
 
     .contacts-social {
+        gap: 0.6rem;
+    }
+}
+
+@media (max-width: 340px) {
+    .email-box {
+        align-items: flex-start;
         flex-direction: column;
+    }
+
+    .email-copy {
+        align-self: flex-end;
     }
 }
