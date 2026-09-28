@@ -20,7 +20,7 @@ function Blog() {
                             </p>
 
                             <h2>
-                                <Link to={`/blog/${post.slug}`}>
+                                  <Link to={`/blog/${post.slug}`}>
                                     {post.title}
                                 </Link>
                             </h2>

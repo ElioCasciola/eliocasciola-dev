@@ -11,6 +11,10 @@ function Intro({ onFinish }) {
         setIsExiting(true)
     }
 
+    function handleVideoLoaded(event) {
+        event.currentTarget.playbackRate = 2
+    }
+
     function handleTransitionEnd(event) {
         if (
             isExiting &&
@@ -30,6 +34,7 @@ function Intro({ onFinish }) {
                 autoPlay
                 muted
                 playsInline
+                onLoadedMetadata={handleVideoLoaded}
                 onEnded={handleVideoEnd}
                 onError={onFinish}
             >

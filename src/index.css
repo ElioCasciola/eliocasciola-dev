@@ -45,6 +45,11 @@ body {
   box-sizing: border-box;
 }
 
+.site-main {
+  flex: 1;
+  width: 100%;
+}
+
 h1,
 h2 {
   font-family: var(--heading);

@@ -8,6 +8,7 @@ import Intro from './components/Intro.jsx';
 import Contacts from './pages/Contacts.jsx';
 import Blog from './pages/Blog.jsx';
 import BlogPost from './pages/BlogPost.jsx';
+import Footer from './components/Footer.jsx';
 
 function App() {
     const [showIntro, setShowIntro] = useState(true);
@@ -20,7 +21,7 @@ function App() {
 
             <Navbar />
 
-            <main>
+            <main className="site-main">
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/projects" element={<Projects />} />
@@ -30,6 +31,8 @@ function App() {
                     <Route path="/contacts" element={<Contacts />} />
                 </Routes>
             </main>
+
+            <Footer />
         </>
     );
 }
