@@ -65,7 +65,7 @@
 }
 
 .blog-post-body code {
-    font-family: var(--mono);
+    font-family: var(--mono), monospace;
 }
 
 @media (max-width: 600px) {

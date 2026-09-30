@@ -23,64 +23,50 @@ const experience = [
         role: 'Referente Logistica',
         company: 'KING S.p.A',
         period: 'Aprile 2025 — Luglio 2025',
-        details: [
-            'Gestione del magazzino e dell’inventario',
-            'Coordinamento delle spedizioni nazionali',
-            'Gestione di resi, documentazione e assistenza B2C',
-        ],
+        details:
+            'Gestione del magazzino e dell’inventario, coordinamento delle spedizioni nazionali e gestione di resi, documentazione e assistenza B2C.',
     },
     {
         role: 'Responsabile della Logistica',
         company: 'Terre Francescane — Cufrol S.R.L',
         period: 'Ottobre 2022 — Settembre 2023',
-        details: [
-            'Gestione ordini, DDT e documentazione',
-            'Spedizioni nazionali e internazionali',
-            'Customer care B2B e B2C',
-        ],
+        details:
+            'Gestione di ordini, DDT e documentazione, coordinamento delle spedizioni nazionali e internazionali e customer care B2B e B2C.',
     },
     {
         role: 'Accoglienza Clienti',
         company: 'Arnaldo Caprai Società Agricola S.R.L',
         period: 'Febbraio 2022 — Aprile 2022',
-        details: [
-            'Degustazioni, visite in cantina e accoglienza in italiano, inglese e spagnolo',
-        ],
+        details:
+            'Degustazioni, visite in cantina e accoglienza dei clienti in italiano, inglese e spagnolo.',
     },
     {
         role: 'Grafico / Data Entry',
         company: 'Fabiana Filippi S.p.A',
         period: 'Dicembre 2021 — Febbraio 2022',
-        details: [
-            'Gestione della pagina rivenditori sulla piattaforma NuOrder',
-            'Produzione e trattamento di immagini e cartelle colore',
-        ],
+        details:
+            'Gestione della pagina rivenditori sulla piattaforma NuOrder e produzione e trattamento di immagini e cartelle colore.',
     },
     {
         role: 'Import / Export Manager',
         company: 'Ziarelli Mario Ricostruzione Gomme S.R.L',
         period: 'Gennaio 2021 — Settembre 2021',
-        details: [
-            'Importazioni, container e documentazione doganale',
-            'Rapporti con trasportatori e fornitori internazionali',
-            'Customer service in inglese e spagnolo',
-        ],
+        details:
+            'Gestione di importazioni, container e documentazione doganale, rapporti con trasportatori e fornitori internazionali e customer service in inglese e spagnolo.',
     },
     {
         role: 'Magazziniere',
         company: 'Brunello Cucinelli S.p.A',
         period: 'Ottobre 2019 — Dicembre 2019',
-        details: [
-            'Inventario filati, spedizioni internazionali e utilizzo di AS400',
-        ],
+        details:
+            'Gestione dell’inventario dei filati, preparazione delle spedizioni internazionali e utilizzo di AS400.',
     },
     {
         role: 'Caposala / Maître',
         company: 'Enoteca La Vineria 29',
         period: 'Gennaio 2017 — Maggio 2017',
-        details: [
-            'Gestione del magazzino, dei fornitori e del servizio al cliente',
-        ],
+        details:
+            'Gestione del magazzino, dei rapporti con i fornitori e del servizio al cliente.',
     },
 ]
 
@@ -101,16 +87,11 @@ function TimelineEntry({ title, organization, period, description, details }) {
         <article className="cv-entry">
             <h3>{title}</h3>
             <p className="cv-entry__meta">
-                {organization} · {period}
+                <span>{organization}</span>
+                <span>{period}</span>
             </p>
             {description && <p>{description}</p>}
-            {details && (
-                <ul>
-                    {details.map((detail) => (
-                        <li key={detail}>{detail}</li>
-                    ))}
-                </ul>
-            )}
+            {details && <p>{details}</p>}
         </article>
     )
 }
@@ -125,13 +106,9 @@ function Cv() {
                     <h1 id="cv-title">Elio Casciola</h1>
                     <p className="cv-role">Junior Software Developer</p>
                     <p className="cv-summary">
-                        Junior Software Developer con particolare interesse per
-                        C#, .NET e la programmazione orientata agli oggetti.
-                        Frequento il corso Data Management & Coding presso ITS
-                        Umbria Academy e sviluppo progetti personali pubblicati
-                        su GitHub. Cerco una prima esperienza professionale che
-                        mi permetta di lavorare su progetti reali e crescere
-                        all’interno di un team di sviluppo.
+                        Junior Software Developer con interesse per C#, .NET e programmazione orientata agli oggetti.
+                        Frequento il corso Data Management & Coding presso ITS Umbria Academy, dove sto acquisendo
+                        competenze pratiche nello sviluppo e nella progettazione software.
                     </p>
                 </header>
 

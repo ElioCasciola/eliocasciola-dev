@@ -34,7 +34,7 @@
 
 .email-address {
     color: var(--text-h);
-    font-family: var(--mono);
+    font-family: var(--mono), monospace;
     font-size: 0.9rem;
     overflow-wrap: anywhere;
 }

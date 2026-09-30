@@ -2,7 +2,7 @@
     padding: 1.5rem 2rem;
     border-top: 1px solid var(--border);
     color: var(--accent);
-    font-family: var(--mono);
+    font-family: var(--mono), monospace;
     font-size: 0.75rem;
     text-align: left;
 }

@@ -12,7 +12,7 @@
 .section-label {
     margin-bottom: 1rem;
     color: var(--accent);
-    font-family: var(--mono);
+    font-family: var(--mono), monospace;
     font-size: 0.875rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
