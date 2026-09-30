@@ -34,6 +34,9 @@ function Intro({ onFinish }) {
                 autoPlay
                 muted
                 playsInline
+                preload="auto"
+                width="1152"
+                height="648"
                 onLoadedMetadata={handleVideoLoaded}
                 onEnded={handleVideoEnd}
                 onError={onFinish}

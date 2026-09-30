@@ -9,17 +9,6 @@
     margin: 0 auto;
 }
 
-.projects-page h1 {
-    margin: 0 0 1.5rem;
-    line-height: 1.1;
-}
-
-.projects-description {
-    max-width: 55ch;
-    font-size: 1.1rem;
-    line-height: 1.7;
-}
-
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 380px));
@@ -142,10 +131,6 @@
 @media (max-width: 600px) {
     .projects-page {
         padding: 4rem 1.25rem;
-    }
-
-    .projects-description {
-        font-size: 1rem;
     }
 
     .projects-grid {

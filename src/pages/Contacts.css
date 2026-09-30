@@ -9,11 +9,6 @@
     margin: 0 auto;
 }
 
-.contacts-page h1 {
-    margin: 0 0 1.5rem;
-    line-height: 1.1;
-}
-
 .contacts-description {
     max-width: 55ch;
     font-size: 1.1rem;

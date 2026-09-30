@@ -9,17 +9,6 @@
     margin: 0 auto;
 }
 
-.blog-page h1 {
-    margin: 0 0 1.5rem;
-    line-height: 1.1;
-}
-
-.blog-description {
-    max-width: 55ch;
-    font-size: 1.1rem;
-    line-height: 1.7;
-}
-
 .blog-list {
     margin-top: 4rem;
 }
@@ -65,10 +54,6 @@
 @media (max-width: 600px) {
     .blog-page {
         padding: 4rem 1.25rem;
-    }
-
-    .blog-description {
-        font-size: 1rem;
     }
 
     .blog-list {

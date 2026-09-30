@@ -1,5 +1,5 @@
 import { FaGithub } from 'react-icons/fa'
-import finalQuestLogo from '../assets/final-quest-logo.png'
+import finalQuestLogo from '../assets/final-quest-logo.webp'
 import './Projects.css'
 
 function Projects() {
@@ -9,13 +9,16 @@ function Projects() {
             aria-labelledby="projects-title"
         >
             <div className="projects-content">
-                <p className="section-label">Progetti</p>
+                <p className="section-label" id="projects-title">Progetti</p>
                 <div className="projects-grid">
                     <article className="project-card">
                         <div className="project-card__media">
                             <img
                                 src={finalQuestLogo}
                                 alt="Logo dorato in pixel art di Final Quest"
+                                width="640"
+                                height="213"
+                                fetchPriority="high"
                             />
                         </div>
 
