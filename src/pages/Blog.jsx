@@ -9,7 +9,7 @@ function Blog() {
             aria-labelledby="blog-title"
         >
             <div className="blog-content">
-                <p className="section-label">Blog</p>
+                <p className="section-label">Logs</p>
                 <div className="blog-list">
                     {posts.map((post) => (
                         <article className="blog-preview" key={post.slug}>

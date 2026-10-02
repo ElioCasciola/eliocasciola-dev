@@ -1,4 +1,4 @@
-Questo è il primo post del mio blog.
+Questo è il primo post dei miei Log.
 
 Ho creato questa pagina per avere uno spazio in cui raccontare ciò che sto imparando e costruendo durante il mio percorso nello sviluppo software.
 

@@ -5,12 +5,12 @@ import logo from '../assets/logo.svg'
 function Navbar() {
     const projectLink = (
         <Link className="navbar-link" to="/projects">
-            Projects
+            Progetti
         </Link>
     )
     const blogLink = (
         <Link className="navbar-link" to="/blog">
-            Blog
+            Logs
         </Link>
     )
     const cvLink = (
@@ -32,6 +32,8 @@ function Navbar() {
                     className="site-logo-image"
                     src={logo}
                     alt="Elio Casciola - Home"
+                    width="393"
+                    height="220"
                 />
             </Link>
             <nav className="navbar">

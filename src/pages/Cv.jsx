@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import { FaDownload, FaGithub, FaLinkedin } from 'react-icons/fa'
 import './Cv.css'
 
 const education = [
@@ -100,16 +100,27 @@ function Cv() {
     return (
         <section className="cv-page" aria-labelledby="cv-title">
             <div className="cv-content">
-                <p className="section-label">Curriculum</p>
+                <p className="section-label">Curriculum Vitae</p>
 
                 <header className="cv-header">
-                    <h1 id="cv-title">Elio Casciola</h1>
-                    <p className="cv-role">Junior Software Developer</p>
-                    <p className="cv-summary">
-                        Junior Software Developer con interesse per C#, .NET e programmazione orientata agli oggetti.
-                        Frequento il corso Data Management & Coding presso ITS Umbria Academy, dove sto acquisendo
-                        competenze pratiche nello sviluppo e nella progettazione software.
-                    </p>
+                    <div className="cv-header__intro">
+                        <h1 id="cv-title">Elio Casciola</h1>
+                        <p className="cv-role">Junior Software Developer</p>
+                        <p className="cv-summary">
+                            Junior Software Developer con interesse per C#, .NET e programmazione orientata agli oggetti.
+                            Frequento il corso Data Management & Coding presso ITS Umbria Academy, dove sto acquisendo
+                            competenze pratiche nello sviluppo e nella progettazione software.
+                        </p>
+                    </div>
+
+                    <a
+                        className="cv-download"
+                        href="/CV_Elio_Casciola_2026.pdf"
+                        download="CV_Elio_Casciola_2026.pdf"
+                    >
+                        <FaDownload aria-hidden="true" />
+                        <span>Scarica CV in .pdf</span>
+                    </a>
                 </header>
 
                 <div className="cv-layout">

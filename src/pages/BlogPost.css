@@ -5,7 +5,7 @@
 
 .blog-post-content {
     width: 100%;
-    max-width: 680px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -24,7 +24,8 @@
 }
 
 .blog-post-header {
-    margin: 2.5rem 0 3rem;
+    max-width: 680px;
+    margin: 1rem 0 3rem;
 }
 
 .blog-post-header h1 {
@@ -38,6 +39,7 @@
 }
 
 .blog-post-body {
+    max-width: 680px;
     font-size: 1.05rem;
     line-height: 1.8;
 }
@@ -74,7 +76,7 @@
     }
 
     .blog-post-header {
-        margin: 2rem 0 2.5rem;
+        margin: 1rem 0 2.5rem;
     }
 
     .blog-post-body {

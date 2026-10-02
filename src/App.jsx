@@ -1,5 +1,5 @@
-import { lazy, Suspense, useState } from 'react';
-import { Route, Routes } from 'react-router';
+import { lazy, Suspense, useEffect, useState } from 'react';
+import { Route, Routes, useLocation } from 'react-router';
 import Home from './pages/Home.jsx';
 import Projects from './pages/Projects.jsx';
 import Navbar from './components/Navbar.jsx';
@@ -11,6 +11,16 @@ import Footer from './components/Footer.jsx';
 
 const BlogPost = lazy(() => import('./pages/BlogPost.jsx'));
 
+function ScrollToTop() {
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
+
+    return null;
+}
+
 function App() {
     const [showIntro, setShowIntro] = useState(true);
 
@@ -21,6 +31,7 @@ function App() {
             )}
 
             <Navbar />
+            <ScrollToTop />
 
             <main className="site-main">
                 <Suspense fallback={null}>

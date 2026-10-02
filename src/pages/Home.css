@@ -1,0 +1,140 @@
+.home-learning,
+.home-latest {
+    padding-inline: 2rem;
+    text-align: left;
+}
+
+.home-learning {
+    padding-bottom: 4rem;
+}
+
+.home-latest {
+    padding-bottom: 6rem;
+}
+
+.home-learning__content,
+.home-latest__content {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+}
+
+.home-learning__content .section-label {
+    margin-bottom: 1rem;
+}
+
+.home-learning__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+    margin: 0;
+    padding: 0;
+    color: var(--text-h);
+    font-weight: 600;
+    list-style: none;
+}
+
+.home-learning__list li::before {
+    margin-right: 1.5rem;
+    color: var(--accent);
+    content: "·";
+}
+
+.home-latest__header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.home-latest__header .section-label {
+    margin: 0;
+}
+
+.home-latest__header time {
+    color: var(--accent);
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.home-latest__body {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: end;
+    gap: 2rem;
+}
+
+.home-latest__body h2 {
+    margin-bottom: 0.75rem;
+}
+
+.home-latest__body h2 a {
+    color: var(--text-h);
+    text-decoration: none;
+}
+
+.home-latest__body p {
+    max-width: 60ch;
+    line-height: 1.7;
+}
+
+.home-latest__link {
+    color: var(--text-h);
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.home-latest__body h2 a:hover,
+.home-latest__link:hover {
+    color: var(--accent);
+}
+
+.home-latest__body h2 a:focus-visible,
+.home-latest__link:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+}
+
+@media (max-width: 600px) {
+    .home-learning,
+    .home-latest {
+        padding-inline: 1.25rem;
+    }
+
+    .home-learning {
+        padding-bottom: 3rem;
+    }
+
+    .home-latest {
+        padding-bottom: 4rem;
+    }
+
+    .home-learning__list {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .home-learning__list li::before {
+        margin-right: 0.75rem;
+    }
+
+    .home-latest__header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .home-latest__body {
+        display: block;
+    }
+
+    .home-latest__link {
+        display: inline-block;
+        margin-top: 1.25rem;
+    }
+}

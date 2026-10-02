@@ -12,9 +12,7 @@ function About() {
 
                 <p className="about-description">
                     Frequento il corso di studio in Data Management & Coding presso
-                    ITS Umbria Academy. Il percorso mi permette di approfondire lo
-                    sviluppo di applicazioni, la gestione dei dati e la progettazione
-                    di soluzioni digitali.
+                    ITS Umbria Academy, dove sto costruendo solide basi nello sviluppo software e nella gestione dei dati.
                 </p>
             </div>
         </section>

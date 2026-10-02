@@ -14,7 +14,7 @@ function BlogPost() {
                     <p className="section-label">Blog</p>
                     <h1 id="post-not-found">Post non trovato</h1>
                     <Link className="blog-back-link" to="/blog">
-                        ← Torna al blog
+                        ← Torna ai Log
                     </Link>
                 </div>
             </section>
@@ -25,7 +25,7 @@ function BlogPost() {
         <article className="blog-post-page" aria-labelledby="post-title">
             <div className="blog-post-content">
                 <Link className="blog-back-link" to="/blog">
-                    ← Torna al blog
+                    ← Torna ai Log
                 </Link>
 
                 <header className="blog-post-header">

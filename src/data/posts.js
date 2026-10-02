@@ -7,7 +7,7 @@ const blogPosts = [
         date: '2026-09-26',
         formattedDate: '26 settembre 2026',
         excerpt:
-            'Perché ho creato questo blog e cosa racconterò durante il mio percorso nello sviluppo software.',
+            'Perché ho creato questi Logs e cosa racconterò durante il mio percorso nello sviluppo software.',
         content: helloWorldContent,
     },
 ]
