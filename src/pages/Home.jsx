@@ -18,7 +18,7 @@ function Home() {
                     <ul className="home-learning__list">
                         <li>C#</li>
                         <li>.NET</li>
-                        <li>Programmazione orientata agli oggetti</li>
+                        <li>Linux</li>
                         <li>SQL</li>
                     </ul>
                 </div>
