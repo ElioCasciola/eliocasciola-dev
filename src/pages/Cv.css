@@ -11,9 +11,9 @@
 
 .cv-header {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-columns: 1fr;
     align-items: start;
-    gap: 2rem;
+    gap: 1.5rem;
     padding-bottom: 3rem;
     border-bottom: 1px solid var(--border);
 }
@@ -37,6 +37,7 @@
 
 .cv-download {
     display: inline-flex;
+    justify-self: start;
     align-items: center;
     justify-content: center;
     gap: 0.55rem;
@@ -203,15 +204,6 @@
 }
 
 @media (max-width: 760px) {
-    .cv-header {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
-    .cv-download {
-        justify-self: start;
-    }
-
     .cv-layout {
         grid-template-columns: 1fr;
         gap: 2.75rem;
