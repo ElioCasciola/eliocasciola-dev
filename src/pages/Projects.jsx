@@ -11,13 +11,7 @@ function Projects() {
             <div className="projects-content">
                 <p className="section-label" id="projects-title">Progetti</p>
                 <div className="projects-grid">
-                    <a
-                        className="project-card-link"
-                        href="https://github.com/ElioCasciola/fallen-zenith"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <article className="project-card">
+                    <article className="project-card">
                             <div className="project-card__media">
                                 <img
                                     src={fallenZenithLogo}
@@ -39,9 +33,9 @@ function Projects() {
                                 <h2>Fallen Zenith</h2>
 
                                 <p className="project-card__description">
-                                    Un dungeon crawler fantasy a turni sviluppato
-                                    in C#, con classi, abilità, mostri e morte
-                                    permanente.
+                                    Un RPG fantasy a turni, strutturato in livelli,
+                                    sviluppato in C# con classi, abilità, mostri e
+                                    morte permanente.
                                 </p>
 
                                 <ul
@@ -53,13 +47,28 @@ function Projects() {
                                     <li>OOP</li>
                                 </ul>
 
-                                <span className="project-card__link">
+                                <div className="project-card__links">
+                                    <a
+                                        className="project-card__link"
+                                        href="https://www.fallenzenith.com"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        <span>Visita il sito</span>
+                                        <span aria-hidden="true">↗</span>
+                                    </a>
+                                    <a
+                                        className="project-card__link"
+                                        href="https://github.com/ElioCasciola/fallen-zenith"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
                                     <FaGithub aria-hidden="true" />
                                     <span>Vedi su GitHub</span>
-                                </span>
+                                    </a>
+                                </div>
                             </div>
                         </article>
-                    </a>
                 </div>
             </div>
         </section>

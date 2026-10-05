@@ -1,5 +1,6 @@
 import { Link } from 'react-router'
 import About from '../components/About.jsx'
+import fallenZenithLogo from '../assets/fallen-zenith-logo.webp'
 import { posts } from '../data/posts.js'
 import './Home.css'
 
@@ -10,17 +11,39 @@ function Home() {
         <>
             <About />
 
-            <section className="home-learning" aria-labelledby="learning-title">
-                <div className="home-learning__content">
-                    <p className="section-label" id="learning-title">
-                        Sto approfondendo
-                    </p>
-                    <ul className="home-learning__list">
-                        <li>C#</li>
-                        <li>.NET</li>
-                        <li>Linux</li>
-                        <li>SQL</li>
-                    </ul>
+            <section className="home-project" aria-labelledby="home-project-title">
+                <div className="home-project__content">
+                    <div className="home-project__image">
+                        <img
+                            src={fallenZenithLogo}
+                            alt="Logo di Fallen Zenith"
+                            width="640"
+                            height="427"
+                        />
+                    </div>
+                    <div className="home-project__copy">
+                        <p className="section-label">Sto sviluppando</p>
+                        <h2 id="home-project-title">Fallen Zenith</h2>
+                        <p>Un RPG fantasy a turni, strutturato in livelli.</p>
+                    </div>
+                    <div className="home-project__links">
+                        <a
+                            className="home-project__link"
+                            href="https://www.fallenzenith.com"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Visita il sito <span aria-hidden="true">↗</span>
+                        </a>
+                        <a
+                            className="home-project__link"
+                            href="https://github.com/ElioCasciola/fallen-zenith"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Vedi su GitHub <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
                 </div>
             </section>
 

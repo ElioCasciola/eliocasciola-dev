@@ -1,45 +1,95 @@
-.home-learning,
-.home-latest {
+.home-latest,
+.home-project {
     padding-inline: 2rem;
     text-align: left;
 }
 
-.home-learning {
-    padding-bottom: 4rem;
+.home-project {
+    padding-block: 0 3rem;
+}
+
+.home-project__content {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(180px, 390px);
+    grid-template-areas: "copy image" "links image";
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+    text-align: left;
+}
+
+.home-project__image {
+    grid-area: image;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    min-height: 180px;
+    transform: translateX(-0.75rem);
+}
+
+.home-project__image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 260px;
+    object-fit: contain;
+    mix-blend-mode: screen;
+}
+
+.home-project__copy {
+    grid-area: copy;
+}
+
+.home-project__copy .section-label {
+    margin-bottom: 0.75rem;
+}
+
+.home-project__copy h2 {
+    margin-bottom: 0.5rem;
+}
+
+.home-project__copy > p:not(.section-label) {
+    line-height: 1.65;
+}
+
+.home-project__links {
+    grid-area: links;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1.25rem;
+}
+
+.home-project__link {
+    box-sizing: border-box;
+    padding-inline: 0.25rem;
+    color: var(--text-h);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.home-project__link:hover {
+    color: var(--accent);
+}
+
+.home-project__link:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
 }
 
 .home-latest {
     padding-bottom: 6rem;
 }
 
-.home-learning__content,
 .home-latest__content {
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
     padding-top: 2rem;
     border-top: 1px solid var(--border);
-}
-
-.home-learning__content .section-label {
-    margin-bottom: 1rem;
-}
-
-.home-learning__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem 1.5rem;
-    margin: 0;
-    padding: 0;
-    color: var(--text-h);
-    font-weight: 600;
-    list-style: none;
-}
-
-.home-learning__list li::before {
-    margin-right: 1.5rem;
-    color: var(--accent);
-    content: "·";
 }
 
 .home-latest__header {
@@ -61,10 +111,7 @@
 }
 
 .home-latest__body {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
-    align-items: end;
-    gap: 2rem;
+    display: block;
 }
 
 .home-latest__body h2 {
@@ -82,6 +129,8 @@
 }
 
 .home-latest__link {
+    display: inline-block;
+    margin-top: 1.25rem;
     color: var(--text-h);
     font-weight: 600;
     text-decoration: none;
@@ -100,27 +149,52 @@
 }
 
 @media (max-width: 600px) {
-    .home-learning,
-    .home-latest {
+    .home-latest,
+    .home-project {
         padding-inline: 1.25rem;
     }
 
-    .home-learning {
-        padding-bottom: 3rem;
+    .home-project {
+        padding-bottom: 2.5rem;
+    }
+
+    .home-project__content {
+        grid-template-columns: minmax(0, 1fr) minmax(130px, 55%);
+        grid-template-areas: "copy image" "links links";
+        column-gap: 0.375rem;
+        row-gap: 0;
+        padding-top: 1.5rem;
+    }
+
+    .home-project__image {
+        min-height: 0;
+        width: calc(100% + 0.5rem);
+        transform: none;
+    }
+
+    .home-project__image img {
+        max-height: 170px;
+    }
+
+    .home-project__copy .section-label {
+        font-size: 0.75rem;
+        letter-spacing: 0.08em;
+        white-space: nowrap;
+    }
+
+    .home-project__links {
+        margin-top: 1.25rem;
+        gap: 0.4rem;
+    }
+
+    .home-project__link {
+        padding-inline: 0.15rem;
+        font-size: 1rem;
+        white-space: nowrap;
     }
 
     .home-latest {
         padding-bottom: 4rem;
-    }
-
-    .home-learning__list {
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
-    .home-learning__list li::before {
-        margin-right: 0.75rem;
     }
 
     .home-latest__header {
@@ -129,12 +203,10 @@
         gap: 0.5rem;
     }
 
-    .home-latest__body {
-        display: block;
-    }
+}
 
-    .home-latest__link {
-        display: inline-block;
-        margin-top: 1.25rem;
+@media (max-width: 360px) {
+    .home-project__content {
+        grid-template-columns: minmax(0, 1fr) minmax(130px, 50%);
     }
 }

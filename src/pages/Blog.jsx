@@ -28,6 +28,14 @@ function Blog() {
                             <p className="blog-preview-excerpt">
                                 {post.excerpt}
                             </p>
+
+                            <Link
+                                className="blog-preview-link"
+                                to={`/blog/${post.slug}`}
+                                aria-label={`Leggi ${post.title}`}
+                            >
+                                Leggi <span aria-hidden="true">→</span>
+                            </Link>
                         </article>
                     ))}
                 </div>
