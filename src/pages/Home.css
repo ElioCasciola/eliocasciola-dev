@@ -40,6 +40,12 @@
     mix-blend-mode: screen;
 }
 
+.home-project__logo {
+    position: relative;
+    width: 100%;
+    max-width: 390px;
+}
+
 .home-project__copy {
     grid-area: copy;
 }

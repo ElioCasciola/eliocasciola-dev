@@ -1,6 +1,7 @@
 import { Link } from 'react-router'
 import About from '../components/About.jsx'
 import fallenZenithLogo from '../assets/fallen-zenith-logo.webp'
+import fallenZenithAnimatedLogo from '../assets/fallen-zenith-logo-particles.webp'
 import { posts } from '../data/posts.js'
 import './Home.css'
 
@@ -14,12 +15,17 @@ function Home() {
             <section className="home-project" aria-labelledby="home-project-title">
                 <div className="home-project__content">
                     <div className="home-project__image">
-                        <img
-                            src={fallenZenithLogo}
-                            alt="Logo di Fallen Zenith"
-                            width="640"
-                            height="427"
-                        />
+                        <div className="home-project__logo">
+                            <picture>
+                                <source media="(prefers-reduced-motion: reduce)" srcSet={fallenZenithLogo} />
+                                <img
+                                    src={fallenZenithAnimatedLogo}
+                                    alt="Logo di Fallen Zenith"
+                                    width="640"
+                                    height="427"
+                                />
+                            </picture>
+                        </div>
                     </div>
                     <div className="home-project__copy">
                         <p className="section-label">Sto sviluppando</p>
