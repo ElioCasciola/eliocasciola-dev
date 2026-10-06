@@ -13,10 +13,6 @@ function About() {
                 <p className="about-description">
                     Il mio rapporto con il mondo dell'informatica è iniziato da bambino: ho imparato a leggere con MS-DOS, tra comandi e schermate di testo. Quella curiosità mi accompagna ancora oggi e mi ha portato a voler capire come funziona il software e a imparare a costruirlo.
                 </p>
-
-                <p className="about-description">
-                    Frequento il corso di studio in Data Management & Coding presso ITS Umbria Academy, dove sto costruendo solide basi nello sviluppo software e nella gestione dei dati.
-                </p>
             </div>
         </section>
     )

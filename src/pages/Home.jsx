@@ -1,7 +1,7 @@
 import { Link } from 'react-router'
 import About from '../components/About.jsx'
 import fallenZenithLogo from '../assets/fallen-zenith-logo.webp'
-import fallenZenithAnimatedLogo from '../assets/fallen-zenith-logo-particles.webp'
+import fallenZenithAnimatedLogo from '../assets/fallen-zenith-logo-particles-60fps.webp'
 import { posts } from '../data/posts.js'
 import './Home.css'
 
@@ -14,41 +14,38 @@ function Home() {
 
             <section className="home-project" aria-labelledby="home-project-title">
                 <div className="home-project__content">
-                    <div className="home-project__image">
-                        <div className="home-project__logo">
+                    <div className="home-project__inner">
+                        <p className="section-label">Sto sviluppando</p>
+                        <h2 className="home-project__logo" id="home-project-title">
                             <picture>
                                 <source media="(prefers-reduced-motion: reduce)" srcSet={fallenZenithLogo} />
                                 <img
                                     src={fallenZenithAnimatedLogo}
-                                    alt="Logo di Fallen Zenith"
+                                    alt="Fallen Zenith"
                                     width="640"
                                     height="427"
                                 />
                             </picture>
+                        </h2>
+                        <p className="home-project__description">Un RPG fantasy a turni, strutturato in livelli.</p>
+                        <div className="home-project__links">
+                            <a
+                                className="home-project__link"
+                                href="https://www.fallenzenith.com"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                Visita il sito <span aria-hidden="true">↗</span>
+                            </a>
+                            <a
+                                className="home-project__link"
+                                href="https://github.com/ElioCasciola/fallen-zenith"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                Vedi su GitHub <span aria-hidden="true">↗</span>
+                            </a>
                         </div>
-                    </div>
-                    <div className="home-project__copy">
-                        <p className="section-label">Sto sviluppando</p>
-                        <h2 id="home-project-title">Fallen Zenith</h2>
-                        <p>Un RPG fantasy a turni, strutturato in livelli.</p>
-                    </div>
-                    <div className="home-project__links">
-                        <a
-                            className="home-project__link"
-                            href="https://www.fallenzenith.com"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            Visita il sito <span aria-hidden="true">↗</span>
-                        </a>
-                        <a
-                            className="home-project__link"
-                            href="https://github.com/ElioCasciola/fallen-zenith"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            Vedi su GitHub <span aria-hidden="true">↗</span>
-                        </a>
                     </div>
                 </div>
             </section>

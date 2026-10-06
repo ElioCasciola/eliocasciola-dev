@@ -126,7 +126,7 @@
 }
 
 .project-card__link:hover {
-    color: #ffc35c;
+    color: var(--accent);
 }
 
 .project-card__link:focus-visible {
