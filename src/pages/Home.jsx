@@ -60,22 +60,12 @@ function Home() {
                     </div>
 
                     <div className="home-latest__body">
-                        <div>
-                            <h2 id="latest-post-title">
-                                <Link to={`/blog/${latestPost.slug}`}>
-                                    {latestPost.title}
-                                </Link>
-                            </h2>
-                            <p>{latestPost.excerpt}</p>
-                        </div>
-
-                        <Link
-                            className="home-latest__link"
-                            to={`/blog/${latestPost.slug}`}
-                            aria-label={`Leggi ${latestPost.title}`}
-                        >
-                            Leggi <span aria-hidden="true">→</span>
-                        </Link>
+                        <h2 id="latest-post-title">
+                            <Link to={`/blog/${latestPost.slug}`}>
+                                {latestPost.title}
+                            </Link>
+                        </h2>
+                        <p>{latestPost.excerpt}</p>
                     </div>
                 </div>
             </section>

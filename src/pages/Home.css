@@ -119,22 +119,11 @@
     line-height: 1.7;
 }
 
-.home-latest__link {
-    display: inline-block;
-    margin-top: 1.25rem;
-    color: var(--text-h);
-    font-weight: 600;
-    text-decoration: none;
-    white-space: nowrap;
-}
-
-.home-latest__body h2 a:hover,
-.home-latest__link:hover {
+.home-latest__body h2 a:hover {
     color: var(--accent);
 }
 
-.home-latest__body h2 a:focus-visible,
-.home-latest__link:focus-visible {
+.home-latest__body h2 a:focus-visible {
     outline: 2px solid var(--accent);
     outline-offset: 4px;
 }

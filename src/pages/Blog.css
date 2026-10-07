@@ -46,23 +46,6 @@
     line-height: 1.7;
 }
 
-.blog-preview-link {
-    display: inline-block;
-    margin-top: 1.25rem;
-    color: var(--text-h);
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.blog-preview-link:hover {
-    color: var(--accent);
-}
-
-.blog-preview-link:focus-visible {
-    outline: 2px solid var(--accent);
-    outline-offset: 4px;
-}
-
 .blog-preview h2 a:focus-visible {
     outline: 2px solid var(--accent);
     outline-offset: 4px;
