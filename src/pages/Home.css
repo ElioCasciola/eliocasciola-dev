@@ -29,6 +29,8 @@
     width: min(100%, 390px);
     margin: 0 0 2rem;
     transform: translateX(-7.5%);
+    background: var(--bg);
+    isolation: isolate;
 }
 
 .home-project__logo img {
@@ -36,7 +38,7 @@
     width: 100%;
     height: auto;
     object-fit: contain;
-    mix-blend-mode: screen;
+    mix-blend-mode: lighten;
 }
 
 .home-project__description {

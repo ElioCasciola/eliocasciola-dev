@@ -1,6 +1,6 @@
 import { FaGithub } from 'react-icons/fa'
-import fallenZenithLogo from '../assets/fallen-zenith-logo.webp'
-import fallenZenithAnimatedLogo from '../assets/fallen-zenith-logo-particles-60fps.webp'
+import fallenZenithLogo from '../assets/fallen-zenith-logo-home-static.webp'
+import fallenZenithAnimatedLogo from '../assets/fallen-zenith-logo-home-30fps.webp'
 import './Projects.css'
 
 function Projects() {
@@ -19,8 +19,8 @@ function Projects() {
                                     <img
                                         src={fallenZenithAnimatedLogo}
                                         alt="Logo di Fallen Zenith con una piuma nera e rossa"
-                                        width="640"
-                                        height="427"
+                                        width="1280"
+                                        height="854"
                                         fetchPriority="high"
                                     />
                                 </picture>

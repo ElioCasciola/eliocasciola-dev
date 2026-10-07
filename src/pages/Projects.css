@@ -41,6 +41,7 @@
     height: auto;
     max-height: 100%;
     object-fit: contain;
+    mix-blend-mode: screen;
 }
 
 .project-card__body {

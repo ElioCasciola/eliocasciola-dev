@@ -1,7 +1,7 @@
 import { Link } from 'react-router'
 import About from '../components/About.jsx'
-import fallenZenithLogo from '../assets/fallen-zenith-logo.webp'
-import fallenZenithAnimatedLogo from '../assets/fallen-zenith-logo-particles-60fps.webp'
+import fallenZenithLogo from '../assets/fallen-zenith-logo-home-static.webp'
+import fallenZenithAnimatedLogo from '../assets/fallen-zenith-logo-home-30fps.webp'
 import { posts } from '../data/posts.js'
 import './Home.css'
 
@@ -22,8 +22,8 @@ function Home() {
                                 <img
                                     src={fallenZenithAnimatedLogo}
                                     alt="Fallen Zenith"
-                                    width="640"
-                                    height="427"
+                                    width="1280"
+                                    height="854"
                                 />
                             </picture>
                         </h2>
