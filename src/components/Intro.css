@@ -29,3 +29,12 @@
     opacity: 0;
     pointer-events: none;
 }
+
+/* Blend opaque black codec backgrounds into the site color in Safari too. */
+.intro-video { mix-blend-mode: lighten; opacity: 0; }
+.intro--playing .intro-video { opacity: 1; }
+/* WebKit-specific selectors hide native controls on the decorative intro. */
+/*noinspection CssInvalidPseudoSelector*/
+.intro-video::-webkit-media-controls,
+.intro-video::-webkit-media-controls-start-playback-button { display: none; }
+@media (prefers-reduced-motion: reduce) { .intro { transition: none; } }

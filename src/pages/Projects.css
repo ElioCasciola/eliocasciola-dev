@@ -183,3 +183,5 @@
     }
 
 }
+
+.project-card__media > [role='img'] { width: 90%; max-width: 290px; max-height: 100%; }

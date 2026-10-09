@@ -37,6 +37,7 @@ function BlogPost() {
 
                 <div className="blog-post-body">
                     <ReactMarkdown>{post.content}</ReactMarkdown>
+                    <p>-Elio</p>
                 </div>
             </div>
         </article>

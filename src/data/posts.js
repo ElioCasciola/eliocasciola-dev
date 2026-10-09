@@ -1,6 +1,16 @@
 import helloWorldContent from '../content/blog/hello-world.md?raw'
+import fallenZenithContent from '../content/blog/fallen-zenith-ricominciare-da-zero.md?raw'
 
 const blogPosts = [
+    {
+        slug: 'fallen-zenith-ricominciare-da-zero',
+        title: 'Fallen Zenith: perché ho deciso di ricominciare da zero',
+        date: '2026-10-09',
+        formattedDate: '9 ottobre 2026',
+        excerpt:
+            'Dallo sviluppo senza un piano a un MVP testuale in C#: perché ho deciso di ripartire dalle fondamenta di Fallen Zenith.',
+        content: fallenZenithContent,
+    },
     {
         slug: 'hello-world',
         title: 'Hello, World!',

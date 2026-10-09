@@ -11,5 +11,3 @@ Scrivere questi post sarà un modo per mettere ordine nelle cose che imparo, con
 Questo è soltanto il punto di partenza.
 
 Hello, World!
-
--Elio

@@ -1,7 +1,6 @@
 import { Link } from 'react-router'
 import About from '../components/About.jsx'
-import fallenZenithLogo from '../assets/fallen-zenith-logo-home-static.webp'
-import fallenZenithAnimatedLogo from '../assets/fallen-zenith-logo-home-30fps.webp'
+import AnimatedLogo from '../components/AnimatedLogo.jsx'
 import { posts } from '../data/posts.js'
 import './Home.css'
 
@@ -17,15 +16,7 @@ function Home() {
                     <div className="home-project__inner">
                         <p className="section-label">Sto sviluppando</p>
                         <h2 className="home-project__logo" id="home-project-title">
-                            <picture>
-                                <source media="(prefers-reduced-motion: reduce)" srcSet={fallenZenithLogo} />
-                                <img
-                                    src={fallenZenithAnimatedLogo}
-                                    alt="Fallen Zenith"
-                                    width="1280"
-                                    height="854"
-                                />
-                            </picture>
+                            <AnimatedLogo blendMode="lighten" />
                         </h2>
                         <p className="home-project__description">Un RPG fantasy a turni, strutturato in livelli.</p>
                         <div className="home-project__links">

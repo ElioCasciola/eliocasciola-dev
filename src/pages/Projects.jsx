@@ -1,6 +1,5 @@
 import { FaGithub } from 'react-icons/fa'
-import fallenZenithLogo from '../assets/fallen-zenith-logo-home-static.webp'
-import fallenZenithAnimatedLogo from '../assets/fallen-zenith-logo-home-30fps.webp'
+import AnimatedLogo from '../components/AnimatedLogo.jsx'
 import './Projects.css'
 
 function Projects() {
@@ -14,16 +13,7 @@ function Projects() {
                 <div className="projects-grid">
                     <article className="project-card">
                             <div className="project-card__media">
-                                <picture>
-                                    <source media="(prefers-reduced-motion: reduce)" srcSet={fallenZenithLogo} />
-                                    <img
-                                        src={fallenZenithAnimatedLogo}
-                                        alt="Logo di Fallen Zenith con una piuma nera e rossa"
-                                        width="1280"
-                                        height="854"
-                                        fetchPriority="high"
-                                    />
-                                </picture>
+                                <AnimatedLogo alt="Logo di Fallen Zenith con una piuma nera e rossa" />
                             </div>
 
                             <div className="project-card__body">
