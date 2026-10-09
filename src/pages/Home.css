@@ -124,6 +124,54 @@
     outline-offset: 4px;
 }
 
+.home-project__update {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+}
+
+.home-project__update .section-label {
+    margin-bottom: 0.75rem;
+    font-size: 0.75rem;
+}
+
+.home-project__update h3 {
+    margin: 0 0 0.75rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.home-project__update-description {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+.home-project__update a {
+    color: var(--text-h);
+    text-decoration: none;
+}
+
+.home-project__update-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 1rem;
+    padding-inline: 0.25rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.home-project__update a:hover {
+    color: var(--accent);
+}
+
+.home-project__update a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+}
+
 .home-latest {
     padding-bottom: 4rem;
 }

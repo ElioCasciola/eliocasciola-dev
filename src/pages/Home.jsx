@@ -2,6 +2,7 @@ import { Link } from 'react-router'
 import About from '../components/About.jsx'
 import AnimatedLogo from '../components/AnimatedLogo.jsx'
 import { posts } from '../data/posts.js'
+import { latestProjectUpdate } from '../data/projectUpdate.js'
 import './Home.css'
 
 function Home() {
@@ -58,6 +59,25 @@ function Home() {
                                 Segui lo sviluppo <span aria-hidden="true">↗</span>
                             </a>
                         </div>
+                        <article className="home-project__update" aria-labelledby="project-update-title">
+                            <p className="section-label">Ultimo update · Fallen Zenith</p>
+                            <h3 id="project-update-title">
+                                <a href={latestProjectUpdate.url} target="_blank" rel="noreferrer">
+                                    {latestProjectUpdate.title}
+                                </a>
+                            </h3>
+                            <p className="home-project__update-description">
+                                {latestProjectUpdate.excerpt}
+                            </p>
+                            <a
+                                className="home-project__update-link"
+                                href={latestProjectUpdate.url}
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                Leggi l’update <span aria-hidden="true">↗</span>
+                            </a>
+                        </article>
                     </section>
                 </div>
             </section>
