@@ -88,7 +88,7 @@ function TimelineEntry({ title, organization, period, description, details }) {
             <h3>{title}</h3>
             <p className="cv-entry__meta">
                 <span>{organization}</span>
-                <span>{period}</span>
+                <span className="date-text">{period}</span>
             </p>
             {description && <p>{description}</p>}
             {details && <p>{details}</p>}

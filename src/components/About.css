@@ -13,9 +13,16 @@
     margin-bottom: 1rem;
     color: var(--accent);
     font-family: var(--mono), monospace;
-    font-size: 0.875rem;
+    font-size: 12px;
     letter-spacing: 0.12em;
     text-transform: uppercase;
+    white-space: nowrap;
+}
+
+@media (min-width: 761px) {
+    .section-label {
+        font-size: 14px;
+    }
 }
 
 .about-section h2 {

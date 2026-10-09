@@ -43,24 +43,19 @@ function Home() {
                         <p className="section-label">Segui il progetto</p>
                         <div className="home-project__journal-body">
                             <h2 id="project-journal-title">
-                                Progettazione e sviluppo
+                                Dal concept al gioco completo
                             </h2>
                             <p className="home-project__journal-description">
-                                Un mondo da costruire, personaggi da definire e idee
-                                da trasformare in un gioco. Negli Updates di Fallen
-                                Zenith racconto i primi passi del progetto.
+                                Negli Updates documento la creazione di Fallen Zenith
+                                da zero: progettazione, codice, grafica e test,
+                                raccontando scelte, progressi e difficoltà.
                             </p>
-                            <a
-                                className="home-project__journal-link"
-                                href="https://fallenzenith.com/updates/"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                Segui lo sviluppo <span aria-hidden="true">↗</span>
-                            </a>
                         </div>
                         <article className="home-project__update" aria-labelledby="project-update-title">
                             <p className="section-label">Ultimo update · Fallen Zenith</p>
+                            <time className="home-project__update-date" dateTime={latestProjectUpdate.date}>
+                                {latestProjectUpdate.formattedDate}
+                            </time>
                             <h3 id="project-update-title">
                                 <a href={latestProjectUpdate.url} target="_blank" rel="noreferrer">
                                     {latestProjectUpdate.title}
@@ -69,14 +64,6 @@ function Home() {
                             <p className="home-project__update-description">
                                 {latestProjectUpdate.excerpt}
                             </p>
-                            <a
-                                className="home-project__update-link"
-                                href={latestProjectUpdate.url}
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                Leggi l’update <span aria-hidden="true">↗</span>
-                            </a>
                         </article>
                     </section>
                 </div>

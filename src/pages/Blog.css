@@ -51,6 +51,21 @@
     outline-offset: 4px;
 }
 
+@media (max-width: 760px) {
+    .blog-preview {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blog-preview-meta {
+        order: 1;
+    }
+
+    .blog-preview-excerpt {
+        order: 2;
+    }
+}
+
 @media (max-width: 600px) {
     .blog-page {
         padding: 4rem 1.25rem;

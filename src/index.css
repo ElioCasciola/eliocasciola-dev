@@ -76,3 +76,16 @@ h2 {
 p {
   margin: 0;
 }
+
+time,
+.date-text {
+  font-family: var(--mono), monospace;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 600px) {
+  time,
+  .date-text {
+    font-size: 0.75rem;
+  }
+}
