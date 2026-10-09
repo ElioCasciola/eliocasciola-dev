@@ -4,7 +4,7 @@ import fallenZenithContent from '../content/blog/fallen-zenith-ricominciare-da-z
 const blogPosts = [
     {
         slug: 'fallen-zenith-ricominciare-da-zero',
-        title: 'Fallen Zenith: perché ho deciso di ricominciare da zero',
+        title: '«Intanto scrivo il codice, poi si vedrà»: la prima lezione di Fallen Zenith',
         date: '2026-10-09',
         formattedDate: '9 ottobre 2026',
         excerpt:

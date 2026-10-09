@@ -38,6 +38,25 @@ function Home() {
                             </a>
                         </div>
                     </div>
+                    <section className="home-project__journal" aria-labelledby="project-journal-title">
+                        <p className="section-label">Dietro il gioco</p>
+                        <h2 id="project-journal-title">
+                            Come nasce<br />Fallen Zenith?
+                        </h2>
+                        <p className="home-project__journal-description">
+                            Un mondo da costruire, personaggi da definire e idee
+                            da trasformare in un gioco. Negli Updates racconto
+                            i primi passi del progetto.
+                        </p>
+                        <a
+                            className="home-project__journal-link"
+                            href="https://fallenzenith.com/updates/"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Segui lo sviluppo <span aria-hidden="true">↗</span>
+                        </a>
+                    </section>
                 </div>
             </section>
 
